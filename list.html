@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+    <title>jgo</title>
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="js/jgo.js"></script>
+
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="css/jgo.css" rel="stylesheet">
+  </head>
+  <body>
+  	<p> </p>
+  	<header>
+	  	<div class="pull-left">imageimage</div>
+  		<div class="pull-right">
+  			<a href="index.html">홈</a> |
+  			<a href="list.html">현황</a> |
+  			<a href="input.html">입고</a> |
+  			<a href="output.html">출고</a> |
+  			<a href="search.html">검색</a> |
+  			<a href="settings.html">설정</a>
+  		</div>
+	</header>
+	<p> </p>
+	<hr>
+	<div class="panel panel-danger">
+		<div class="panel-heading row">
+			<div class="col-xs-6"><div class="text-left text-bold" id="input_date"> </div></div>
+			<div class="col-xs-6 text-right"><h3 class="panel-title">현황</h3></div>			
+		</div>		
+		
+		<div class="panel-body">
+			<!-- 실제로 루프될 부분 1 start -->
+			<table class="table table-striped">
+				<tbody>
+					<thead class="table-header">
+						<tr>
+							<th colspan="5" class="table-category">주류</th>
+						</tr>
+					</thead>
+					<tr>
+						<th class="">항목</th>
+						<th class="table-list-td number-text">재고</th>
+						<th class="table-list-td number-text">입고일</th>
+					</tr>
+					<!-- 실제로 루프될 부분 2 start -->
+					<tr>
+						<td>처음처럼</td>
+						<td class="table-list-td number-text">10</td>
+						<td class="table-list-td number-text">2014-01-15</td>
+					</tr>
+					<!-- 실제로 루프될 부분 2 end -->
+			</table>
+			<!-- 실제로 루프될 부분 1 end -->
+			<!-- 샘플 start -->
+			<table class="table table-striped">
+				<tbody>
+					<thead class="table-header">
+						<tr>
+							<th colspan="5" class="table-category">야채</th>
+						</tr>
+					</thead>
+					<tr>
+						<th class="">항목</th>
+						<th class="table-list-td number-text">재고</th>
+						<th class="table-list-td number-text">입고일</th>
+					</tr>
+					<tr>
+						<td>대파(단)</td>
+						<td class="table-list-td number-text">10</td>
+						<td class="table-list-td number-text">2014-01-05</td>
+					</tr>
+					<tr>
+						<td>양파</td>
+						<td class="table-list-td number-text">20</td>
+						<td class="table-list-td number-text">2014-01-12</td>
+					</tr>
+					<tr>
+						<td>토마토</td>
+						<td class="table-list-td number-text">15</td>
+						<td class="table-list-td number-text">2014-01-15</td>
+					</tr>
+				</tbody>
+			</table>
+			<table class="table table-striped">
+				<tbody>
+					<thead class="table-header">
+						<tr>
+							<th colspan="5" class="table-category">주류</th>
+						</tr>
+					</thead>
+					<tr>
+						<th class="">항목</th>
+						<th class="table-list-td number-text">재고</th>
+						<th class="table-list-td number-text">입고일</th>
+					</tr>
+					<tr>
+						<td>처음처럼</td>
+						<td class="table-list-td number-text">10</td>
+						<td class="table-list-td number-text">2014/02/15</td>
+					</tr>
+					<tr>
+						<td>참이슬</td>
+						<td class="table-list-td number-text">20</td>
+						<td class="table-list-td number-text">2014-01-09</td>
+					</tr>
+					<tr>
+						<td>백세주</td>
+						<td class="table-list-td number-text">15</td>
+						<td class="table-list-td number-text">2014-01-15</td>
+					</tr>
+			</table>			
+			<table class="table table-striped">
+				<tbody>
+					<thead class="table-header">
+						<tr>
+							<th colspan="5" class="table-category">주류</th>
+						</tr>
+					</thead>
+					<tr>
+						<th class="">항목</th>
+						<th class="table-list-td number-text">재고</th>
+						<th class="table-list-td number-text">입고일</th>
+					</tr>
+					<tr>
+						<td>처음처럼</td>
+						<td class="table-list-td number-text">10</td>
+						<td class="table-list-td number-text">2014-01-11</td>
+					</tr>
+					<tr>
+						<td>참이슬</td>
+						<td class="table-list-td number-text">20</td>
+						<td class="table-list-td number-text">2014-01-12</td>
+					</tr>
+					<tr>
+						<td>백세주</td>
+						<td class="table-list-td number-text">15</td>
+						<td class="table-list-td number-text">2014-01-13</td>
+					</tr>
+			</table>
+			<!-- 샘플 둥 -->
+		</div>
+	</div>
+  
+      
+	<hr>
+    <footer style="clear: both; margin-top: 5px;margin-bottom: 5px;">
+    	<div style="text-align: center;">copyright</div>
+    </footer>
+    
+    <script>
+    	$(document).ready( function(){
+	    	var today = getTodayYYYYMMDD();
+	    	$("#input_date").text( today );    		
+    	} );
+    </script>
+    
+  </body>
+</html>​
