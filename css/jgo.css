@@ -1,21 +1,38 @@
 body {
-	padding: 5px;
+	padding: 2px;
 	font-size: 12px;
-}
-div {
-	margin-top: 5px;
-	margin-bottom: 5px;
+	font-family: verdana;
 }
 p {
 	clear: both;
+	height: 5px;
+}
+hr {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+/********** bootstrap overide **********/
+.row {
+	margin-right: 0px;
+	margin-left: 0px;
+}
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+	padding: 5px;
 }
 .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
 	padding: 2px;
 	vertical-align: middle;
 	border-bottom: 1px solid #dddddd;
 }
-.number-text {
-	text-align: right;
+.panel-body {
+	padding: 2px;
+}
+.panel-heading {
+	padding: 5px;
+	height: 40px;
+}
+.panel-title {
+	font-weight: bold;
 }
 /********** table **********/
 .table-input {
@@ -25,15 +42,36 @@ p {
 .table-category {
 	text-align: center;
 }
-.table-good-name {
+.table-input-output-td {
 	width: 20%;
 }
+.table-list-td {
+	width: 30%;
+}
 .table-header {
-	background-color: #333333;
+	background-color: #EEEEEE;
 	font-weight: bold;
-	color: white;
 }
 /********** button **********/
-.jgo-button-right {
+.home-button {
+	padding: 5px;
+}
+/********** menu **********/
+.menu-now {
+	font-weight: bold;
+}
+.menu-now-title {
+	font-weight: bold;
+	font-size: 14px;
+	text-align: center;
+	background-color: #DDA0DD;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+/********** etc **********/
+.text-bold {
+	font-weight: bold;
+}
+.number-text {
 	text-align: right;
 }
