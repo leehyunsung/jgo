@@ -1,0 +1,39 @@
+body {
+	padding: 5px;
+	font-size: 12px;
+}
+div {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+p {
+	clear: both;
+}
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+	padding: 2px;
+	vertical-align: middle;
+	border-bottom: 1px solid #dddddd;
+}
+.number-text {
+	text-align: right;
+}
+/********** table **********/
+.table-input {
+	text-align: right;
+	width: 100%;
+}
+.table-category {
+	text-align: center;
+}
+.table-good-name {
+	width: 20%;
+}
+.table-header {
+	background-color: #333333;
+	font-weight: bold;
+	color: white;
+}
+/********** button **********/
+.jgo-button-right {
+	text-align: right;
+}

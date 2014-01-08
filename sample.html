@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8">
+	
+	<script src="js/jquery-1.10.2.js"></script>
+    <script src="js/sample.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="js/jgo.js"></script>
+    
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="css/jgo.css" rel="stylesheet">
+  </head>
+  <body onload="init();">
+
+	<header>
+		header
+	</header>
+    <ul id="todoItems">
+    </ul>
+    <form type="post" onsubmit="addTodo(); return false;">
+      <input type="text" id="todo" name="todo" placeholder="What do you need to do?" style="width: 200px;" />
+      <input type="submit" value="Add Todo Item"/>
+    </form>
+    <footer>
+    	footer
+    </footer>
+  </body>
+</html>​
