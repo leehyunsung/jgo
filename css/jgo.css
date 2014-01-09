@@ -11,6 +11,9 @@ hr {
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
+a {
+	color: #217598;
+}
 /********** bootstrap overide **********/
 .row {
 	margin-right: 0px;
@@ -33,6 +36,11 @@ hr {
 }
 .panel-title {
 	font-weight: bold;
+}
+/********** header **********/
+.a-header {
+	padding-left: 6px;
+	padding-right: 6px;
 }
 /********** table **********/
 .table-input {
@@ -74,4 +82,7 @@ hr {
 }
 .number-text {
 	text-align: right;
+}
+.right-padding-10 {
+	padding-right: 10px;
 }
