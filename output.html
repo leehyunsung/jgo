@@ -21,8 +21,10 @@
   			<a href="input.html" class="a-header"><span class="glyphicon glyphicon-log-in"> </span></a>
   			<a href="output.html" class="a-header"><span class="glyphicon glyphicon-log-out"> </span></a>
   			<a href="search.html" class="a-header"><span class="glyphicon glyphicon-search"> </span></a>
+  			<a href="date.html" class="a-header"><span class="glyphicon glyphicon-calendar"> </span></a>
   			<a href="settings.html" class="a-header"><span class="glyphicon glyphicon-cog"> </span></a>
-  		</div>	</header>
+  		</div>
+  	</header>
 	<p> </p>
 	<hr>
 	<div class="panel panel-danger">
@@ -56,6 +58,7 @@
 						<td class="table-input-output-td number-text">0</td>
 					</tr>
 					<!-- 실제로 루프될 부분 2 end -->
+				</tbody>
 			</table>
 			<!-- 실제로 루프될 부분 1 end -->
 			<!-- 샘플 start -->
@@ -131,6 +134,7 @@
 						<td class="table-input-output-td number-text"><input type="text" value="0" class="table-input"></td>
 						<td class="table-input-output-td number-text">0</td>
 					</tr>
+				</tbody>
 			</table>			
 			<table class="table table-striped">
 				<tbody>
@@ -167,6 +171,7 @@
 						<td class="table-input-output-td number-text"><input type="text" value="0" class="table-input"></td>
 						<td class="table-input-output-td number-text">0</td>
 					</tr>
+				</tbody>
 			</table>
 			<!-- 샘플 둥 -->
 			<div class="">
@@ -182,21 +187,21 @@
     
 	<!-- Modal -->
 	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	  <div class="modal-dialog">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-	        <h3 class="modal-title" id="myModalLabel"><span class="glyphicon glyphicon-log-out"> </span> 출고</h3>
-	      </div>
-	      <div class="modal-body">
-	        입력한 내용을 등록해도 될까요?
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-	        <button type="button" class="btn btn-danger">Save changes</button>
-	      </div>
-	    </div><!-- /.modal-content -->
-	  </div><!-- /.modal-dialog -->
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h3 class="modal-title" id="myModalLabel"><span class="glyphicon glyphicon-log-out"> </span> 출고</h3>
+				</div>
+				<div class="modal-body">
+					입력한 내용을 등록해도 될까요?
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-danger">Save changes</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
 	</div><!-- /.modal -->
     
     <script>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+    <title>jgo</title>
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="js/jgo.js"></script>
+
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="css/jgo.css" rel="stylesheet">
+  </head>
+  <body>
+  	<p> </p>
+  	<header>
+	  	<div class="pull-left">imageimage</div>
+  		<div class="pull-right">
+  			<a href="index.html" class="a-header"><span class="glyphicon glyphicon-home"> </span></a>
+  			<a href="list.html" class="a-header"><span class="glyphicon glyphicon-list-alt"> </span></a>
+  			<a href="input.html" class="a-header"><span class="glyphicon glyphicon-log-in"> </span></a>
+  			<a href="output.html" class="a-header"><span class="glyphicon glyphicon-log-out"> </span></a>
+  			<a href="search.html" class="a-header"><span class="glyphicon glyphicon-search"> </span></a>
+  			<a href="date.html" class="a-header"><span class="glyphicon glyphicon-calendar"> </span></a>
+  			<a href="settings.html" class="a-header"><span class="glyphicon glyphicon-cog"> </span></a>
+  		</div>
+  	</header>
+	<p> </p>
+	<hr>
+	<div class="panel panel-info">
+		<div class="panel-heading row">
+			<div class="col-xs-12 text-right"><h3 class="panel-title"><span class="glyphicon glyphicon-search"> </span> 검색</h3></div>			
+		</div>
+		<div class="panel-body">
+			<table class="table">
+				<tbody>
+					<tr>
+						<th class=""><input type="checkbox" name="category"> 카테고리</th>
+						<td class="">
+							<div class="btn-group">
+								<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">선택 <span class="caret"></span></button>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="#">주류</a></li>
+									<li><a href="#">야채</a></li>
+									<li><a href="#">음료</a></li>
+								</ul>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th class=""><input type="checkbox" name="good"> 품목</th>
+						<td class="">
+							<div class="btn-group">
+								<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">선택 <span class="caret"></span></button>
+								<ul class="dropdown-menu" role="menu">
+									<li><a href="#">주류</a></li>
+									<li><a href="#">야채</a></li>
+									<li><a href="#">음료</a></li>
+								</ul>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<th class="" rowspan="2"><input type="checkbox" name="period"> 날짜</th>
+						<td class="">
+							<input type="date" id="input_date_from" name="input_date"> 부터
+						</td>
+					</tr>
+					<tr>
+						<td class="">
+							<input type="date" id="input_date_to" name="input_date"> 까지
+						</td>
+					</tr>
+				</tbody>
+			</table>	
+			
+			<table class="table table-striped">
+				<tbody>
+					<thead class="table-header">
+						<tr>
+							<th colspan="5" class="table-category">주류</th>
+						</tr>
+					</thead>
+					<tr>
+						<th class="">항목</th>
+						<th class="number-text">입고</th>
+						<th class="number-text">출고</th>
+						<th class="number-text">재고</th>
+						<th class="number-text">지출</th>
+					</tr>
+					<tr>
+						<td>처음처럼</td>
+						<td class="number-text">20</td>
+						<td class="number-text">10</td>
+						<td class="number-text">10</td>
+						<td class="number-text">12,500</td>
+					</tr>
+					<tr>
+						<td>참이슬</td>
+						<td class="number-text">40</td>
+						<td class="number-text">10</td>
+						<td class="number-text">30</td>
+						<td class="number-text">40,000</td>
+					</tr>
+					<tr>
+						<td>백세주</td>
+						<td class="number-text">15</td>
+						<td class="number-text">10</td>
+						<td class="number-text">5</td>
+						<td class="number-text">50,000</td>
+					</tr>
+				</tbody>
+			</table>			
+				
+		</div>
+	</div>
+	
+	<hr>
+    <footer style="clear: both; margin-top: 5px;margin-bottom: 5px;">
+    	<div style="text-align: center;">copyright</div>
+    </footer>
+
+    <script>
+    	$(document).ready( function(){
+	    	var today = getTodayYYYYMMDD();
+	    	$("#input_date_from").val( today );
+	    	$("#input_date_to").val( today );    		
+    	} );
+    </script>
+    
+  </body>
+</html>​
