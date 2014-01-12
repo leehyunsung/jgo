@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+    <title>jgo</title>
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="js/jgo.js"></script>
+
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="css/jgo.css" rel="stylesheet">
+  </head>
+  <body>
+  	<p> </p>
+  	<header>
+	  	<div class="pull-left">imageimage</div>
+  		<div class="pull-right">
+  			<a href="index.html" class="a-header"><span class="glyphicon glyphicon-home"> </span></a>
+  			<a href="list.html" class="a-header"><span class="glyphicon glyphicon-list-alt"> </span></a>
+  			<a href="input.html" class="a-header"><span class="glyphicon glyphicon-log-in"> </span></a>
+  			<a href="output.html" class="a-header"><span class="glyphicon glyphicon-log-out"> </span></a>
+  			<a href="search.html" class="a-header"><span class="glyphicon glyphicon-search"> </span></a>
+  			<a href="date.html" class="a-header"><span class="glyphicon glyphicon-calendar"> </span></a>
+  			<a href="settings.html" class="a-header"><span class="glyphicon glyphicon-cog"> </span></a>
+  		</div>
+  	</header>
+	<p> </p>
+	<hr>
+	<div class="panel panel-danger">
+		<div class="panel-heading row">
+			<div class="col-xs-12 text-right"><h3 class="panel-title"><span class="glyphicon glyphicon-cog"> </span> 설정</h3></div>			
+		</div>
+
+		<div class="panel-body">
+					<div class="">
+					<button class="btn btn-danger btn-block" data-toggle="modal" data-target="#myModal">카테고리 <span class="glyphicon glyphicon-plus"> </span></button>
+				</div>
+				
+			<div class="panel-group" id="accordion">
+			  <div class="panel panel-danger">
+			  
+			  	
+					
+			    <div class="panel-heading">
+			      <h4 class="panel-title">
+			      
+			      	
+			        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+			          주류
+			        </a>
+			        <div class="pull-right">
+			        	<a href="settings.html" class="a-header"><span class="glyphicon glyphicon-plus"> </span></a>
+			        	<a href="settings.html" class="a-header"><span class="glyphicon glyphicon-edit"> </span></a>
+			        </div>
+			      </h4>
+			    </div>
+			    <div id="collapseOne" class="panel-collapse collapse in">
+			      <div class="panel-body">
+					<table class="table">
+						<tbody>
+							<thead class="table-header">
+								<tr>
+									<th colspan="">품명</th>
+									<th colspan="" class="number-text">단가</th>
+									<th colspan="" class="number-text">수정</th>
+								</tr>
+							</thead>
+							<tr><td class="">참이슬</td><td class="number-text">1000</td><td class="number-text"><a href="settings.html"><span class="glyphicon glyphicon-edit"> </span></a></td></tr>
+							<tr><td class="">처음처럼</td><td class="number-text">1000</td><td class="number-text"><a href="settings.html"><span class="glyphicon glyphicon-edit"> </span></a></td></tr>
+							<tr><td class="">백세주</td><td class="number-text">1000</td><td class="number-text"><a href="settings.html"><span class="glyphicon glyphicon-edit"> </span></a></td></tr>
+						</tbody>
+					</table>	
+			      </div>
+			    </div>
+			  </div>
+			  <div class="panel panel-danger">
+			    <div class="panel-heading">
+			      <h4 class="panel-title">
+			        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+			          야채
+			        </a>
+			        <div class="pull-right">
+			        	<a href="settings.html" class="a-header"><span class="glyphicon glyphicon-plus"> </span></a>
+			        	<a href="settings.html" class="a-header"><span class="glyphicon glyphicon-edit"> </span></a>
+			        </div>
+			      </h4>
+			    </div>
+			    <div id="collapseTwo" class="panel-collapse collapse">
+			      <div class="panel-body">
+					<table class="table">
+						<tbody>
+							<thead class="table-header">
+								<tr>
+									<th colspan="">품명</th>
+									<th colspan="" class="number-text">단가</th>
+									<th colspan="" class="number-text">수정</th>
+								</tr>
+							</thead>
+							<tr><td class="">참이슬</td><td class="number-text">1000</td><td class="number-text"><a href="settings.html"><span class="glyphicon glyphicon-edit"> </span></a></td></tr>
+							<tr><td class="">처음처럼</td><td class="number-text">1000</td><td class="number-text"><a href="settings.html"><span class="glyphicon glyphicon-edit"> </span></a></td></tr>
+							<tr><td class="">백세주</td><td class="number-text">1000</td><td class="number-text"><a href="settings.html"><span class="glyphicon glyphicon-edit"> </span></a></td></tr>
+						</tbody>
+					</table>	
+			      </div>
+			    </div>
+			  </div>
+			</div>			
+		</div>
+		
+		
+	</div>
+	
+    <hr>
+    <footer style="clear: both; margin-top: 5px;margin-bottom: 5px;">
+    	<div style="text-align: center;">copyright</div>
+    </footer>
+    
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h3 class="modal-title" id="myModalLabel"><span class="glyphicon glyphicon-cog"> </span> 카테고리 추가</h3>
+				</div>
+				<div class="modal-body">
+					입력한 내용을 등록해도 될까요?
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-danger">Save</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+    
+    <script>
+    	$(document).ready( function(){
+	    	var today = getTodayYYYYMMDD();
+	    	$("#input_date").val( today );    		
+    	} );
+    </script>
+    
+  </body>
+</html>​
