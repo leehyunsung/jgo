@@ -30,9 +30,7 @@ a {
 	border-bottom: 1px solid #dddddd;
 }
 .panel-body {
-	padding: 0px;
-	padding-left: 2px;
-	padding-right: 2px;
+	padding: 2px;
 }
 .panel-heading {
 	padding: 5px;
