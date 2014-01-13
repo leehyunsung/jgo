@@ -1,228 +1,232 @@
 <!DOCTYPE html>
 <html>
-  <head>
-  	<meta charset="utf-8">
-    <title>jgo</title>
-    <script src="js/jquery-1.10.2.js"></script>
-    <script src="bootstrap/js/bootstrap.js"></script>
-    <script src="js/jgo.js"></script>
+	<head>
+		<meta charset="utf-8">
+		<title>jgo</title>
+		<script src="js/jquery-1.10.2.js"></script>
+		<script src="bootstrap/js/bootstrap.js"></script>
+		<script src="js/jgo.js"></script>
 
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-    <link href="css/jgo.css" rel="stylesheet">
-  </head>
-  <body>
-  	<p> </p>
-  	<header>
-	  	<div class="pull-left">imageimage</div>
-  		<div class="pull-right">
-  			<button onclick='location.href="index.html"' class="btn btn-link"><span class="glyphicon glyphicon-home"> </span></button>
-  			<button onclick='location.href="list.html"' class="btn btn-link"><span class="glyphicon glyphicon-list-alt"> </span></button>
-  			<button onclick='location.href="input.html"' class="btn btn-link"><span class="glyphicon glyphicon-log-in"> </span></button>
-  			<button onclick='location.href="output.html"' class="btn btn-link"><span class="glyphicon glyphicon-log-out"> </span></button>
-  			<button onclick='location.href="search.html"' class="btn btn-link"><span class="glyphicon glyphicon-search"> </span></button>
-  			<button onclick='location.href="date.html"' class="btn btn-link"><span class="glyphicon glyphicon-calendar"> </span></button>
-  			<button onclick='location.href="settings.html"' class="btn btn-link"><span class="glyphicon glyphicon-cog"> </span></button>
-  		</div>
-  	</header>
-	<p> </p>
-	<hr>
-	<div class="panel panel-danger">
-		<div class="panel-heading row">
-			<div class="col-xs-8"><span class="glyphicon glyphicon-calendar"> </span> <input type="date" id="output_date" name="input_date"></div>
-			<div class="col-xs-4 text-right"><h3 class="panel-title"><span class="glyphicon glyphicon-log-out"> </span> 출고</h3></div>			
-		</div>
-		<div class="panel-body">		
-		
-			<!-- 실제로 루프될 부분 1 start -->
-			<table class="table table-striped">
-				<tbody>
-					<thead class="table-header">
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+		<link href="css/jgo.css" rel="stylesheet">
+	</head>
+	<body>
+		<p> </p>
+		<header>
+			<div class="">imageimage</div>
+			<p> </p>
+			<ul class="nav nav-tabs">
+				<li><a href="index.html"><span class="glyphicon glyphicon-home"> </span></a></li>
+				<li><a href="list.html" class="btn-link"><span class="glyphicon glyphicon-list-alt"> </span></a></li>
+				<li><a href="input.html" class="btn-link"><span class="glyphicon glyphicon-log-in"> </span></a></li>
+				<li class="active"><a href="output.html" class="btn-link"><span class="glyphicon glyphicon-log-out"> </span></a></li>
+				<li><a href="search.html" class="btn-link"><span class="glyphicon glyphicon-search"> </span></a></li>
+				<li><a href="date.html" class="btn-link"><span class="glyphicon glyphicon-calendar"> </span></a></li>
+				<li><a href="settings.html" class="btn-link"><span class="glyphicon glyphicon-cog"> </span></a></li>
+				<li><a href="contact.html" class="btn-link"><span class="glyphicon glyphicon-info-sign"> </span></a></li>
+			</ul>
+		</header>
+		<p class="p-4px"> </p>
+		<div class="panel panel-danger">
+			<div class="panel-heading row">
+				<div class="col-xs-8"><span class="glyphicon glyphicon-calendar"> </span> <input type="date" id="output_date" name="input_date"></div>
+				<div class="col-xs-4 text-right"><h3 class="panel-title"><span class="glyphicon glyphicon-log-out"> </span> 출고</h3></div>			
+			</div>
+			<div class="panel-body">		
+				<div class="alert alert-warning alert-dismissable">
+					<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+					<strong>[주의]</strong> 저장 전에 꼭 입력 데이터 확인하기
+				</div>
+				<!-- 실제로 루프될 부분 1 start -->
+				<table class="table table-striped">
+					<tbody>
+						<thead class="table-header">
+							<tr>
+								<th colspan="5" class="table-category">주류</th>
+							</tr>
+						</thead>
 						<tr>
-							<th colspan="5" class="table-category">주류</th>
+							<th class="table-input-output-td">항목</th>
+							<th class="table-input-output-td number-text">재고</th>
+							<th class="table-input-output-td number-text">입고</th>
+							<th class="table-input-output-td number-text">단가</th>
+							<th class="table-input-output-td number-text">금액</th>
 						</tr>
-					</thead>
-					<tr>
-						<th class="table-input-output-td">항목</th>
-						<th class="table-input-output-td number-text">재고</th>
-						<th class="table-input-output-td number-text">입고</th>
-						<th class="table-input-output-td number-text">단가</th>
-						<th class="table-input-output-td number-text">금액</th>
-					</tr>
-					<!-- 실제로 루프될 부분 2 start -->
-					<tr>
-						<td>처음처럼</td>
-						<td class="table-input-output-td number-text">10</td>
-						<td class="table-input-output-td number-text"><input type="text" value="0" class="table-input"></td>
-						<td class="table-input-output-td number-text"><input type="text" value="0" class="table-input"></td>
-						<td class="table-input-output-td number-text">0</td>
-					</tr>
-					<!-- 실제로 루프될 부분 2 end -->
-				</tbody>
-			</table>
-			<!-- 실제로 루프될 부분 1 end -->
-			<!-- 샘플 start -->
-			<table class="table table-striped">
-				<tbody>
-					<thead class="table-header">
+						<!-- 실제로 루프될 부분 2 start -->
 						<tr>
-							<th colspan="5" class="table-category">야채</th>
+							<td>처음처럼</td>
+							<td class="table-input-output-td number-text">10</td>
+							<td class="table-input-output-td number-text"><input type="text" value="0" class="table-input"></td>
+							<td class="table-input-output-td number-text"><input type="text" value="0" class="table-input"></td>
+							<td class="table-input-output-td number-text">0</td>
 						</tr>
-					</thead>
-					<tr>
-						<th class="table-input-output-td">항목</th>
-						<th class="table-input-output-td number-text">재고</th>
-						<th class="table-input-output-td number-text">입고</th>
-						<th class="table-input-output-td number-text">단가</th>
-						<th class="table-input-output-td number-text">금액</th>
-					</tr>
-					<tr>
-						<td>대파(단)</td>
-						<td class="table-input-output-td number-text">10</td>
-						<td class="table-input-output-td number-text"><input type="text" value="0" class="table-input"></td>
-						<td class="table-input-output-td number-text"><input type="text" value="0" class="table-input"></td>
-						<td class="table-input-output-td number-text">0</td>
-					</tr>
-					<tr>
-						<td>양파</td>
-						<td class="table-input-output-td number-text">20</td>
-						<td class="table-input-output-td number-text"><input type="text" value="0" class="table-input"></td>
-						<td class="table-input-output-td number-text"><input type="text" value="0" class="table-input"></td>
-						<td class="table-input-output-td number-text">0</td>
-					</tr>
-					<tr>
-						<td>토마토</td>
-						<td class="table-input-output-td number-text">15</td>
-						<td class="table-input-output-td number-text"><input type="text" value="0" class="table-input"></td>
-						<td class="table-input-output-td number-text"><input type="text" value="0" class="table-input"></td>
-						<td class="table-input-output-td number-text">0</td>
-					</tr>
-				</tbody>
-			</table>
-			<table class="table table-striped">
-				<tbody>
-					<thead class="table-header">
+						<!-- 실제로 루프될 부분 2 end -->
+					</tbody>
+				</table>
+				<!-- 실제로 루프될 부분 1 end -->
+				<!-- 샘플 start -->
+				<table class="table table-striped">
+					<tbody>
+						<thead class="table-header">
+							<tr>
+								<th colspan="5" class="table-category">야채</th>
+							</tr>
+						</thead>
 						<tr>
-							<th colspan="5" class="table-category">주류</th>
+							<th class="table-input-output-td">항목</th>
+							<th class="table-input-output-td number-text">재고</th>
+							<th class="table-input-output-td number-text">입고</th>
+							<th class="table-input-output-td number-text">단가</th>
+							<th class="table-input-output-td number-text">금액</th>
 						</tr>
-					</thead>
-					<tr>
-						<th class="table-input-output-td">항목</th>
-						<th class="table-input-output-td number-text">재고</th>
-						<th class="table-input-output-td number-text">입고</th>
-						<th class="table-input-output-td number-text">단가</th>
-						<th class="table-input-output-td number-text">금액</th>
-					</tr>
-					<tr>
-						<td>처음처럼</td>
-						<td class="table-input-output-td number-text">10</td>
-						<td class="table-input-output-td number-text"><input type="text" value="0" class="table-input"></td>
-						<td class="table-input-output-td number-text"><input type="text" value="0" class="table-input"></td>
-						<td class="table-input-output-td number-text">0</td>
-					</tr>
-					<tr>
-						<td>참이슬</td>
-						<td class="table-input-output-td number-text">20</td>
-						<td class="table-input-output-td number-text"><input type="text" value="0" class="table-input"></td>
-						<td class="table-input-output-td number-text"><input type="text" value="0" class="table-input"></td>
-						<td class="table-input-output-td number-text">0</td>
-					</tr>
-					<tr>
-						<td>백세주</td>
-						<td class="table-input-output-td number-text">15</td>
-						<td class="table-input-output-td number-text"><input type="text" value="0" class="table-input"></td>
-						<td class="table-input-output-td number-text"><input type="text" value="0" class="table-input"></td>
-						<td class="table-input-output-td number-text">0</td>
-					</tr>
-				</tbody>
-			</table>			
-			<table class="table table-striped">
-				<tbody>
-					<thead class="table-header">
 						<tr>
-							<th colspan="5" class="table-category">주류</th>
+							<td>대파(단)</td>
+							<td class="table-input-output-td number-text">10</td>
+							<td class="table-input-output-td number-text"><input type="text" value="0" class="table-input"></td>
+							<td class="table-input-output-td number-text"><input type="text" value="0" class="table-input"></td>
+							<td class="table-input-output-td number-text">0</td>
 						</tr>
-					</thead>
-					<tr>
-						<th class="table-input-output-td">항목</th>
-						<th class="table-input-output-td number-text">재고</th>
-						<th class="table-input-output-td number-text">입고</th>
-						<th class="table-input-output-td number-text">단가</th>
-						<th class="table-input-output-td number-text">금액</th>
-					</tr>
-					<tr>
-						<td>처음처럼</td>
-						<td class="table-input-output-td number-text">10</td>
-						<td class="table-input-output-td number-text"><input type="text" value="0" class="table-input"></td>
-						<td class="table-input-output-td number-text"><input type="text" value="0" class="table-input"></td>
-						<td class="table-input-output-td number-text">0</td>
-					</tr>
-					<tr>
-						<td>참이슬</td>
-						<td class="table-input-output-td number-text">20</td>
-						<td class="table-input-output-td number-text"><input type="text" value="0" class="table-input"></td>
-						<td class="table-input-output-td number-text"><input type="text" value="0" class="table-input"></td>
-						<td class="table-input-output-td number-text">0</td>
-					</tr>
-					<tr>
-						<td>백세주</td>
-						<td class="table-input-output-td number-text">15</td>
-						<td class="table-input-output-td number-text"><input type="text" value="0" class="table-input"></td>
-						<td class="table-input-output-td number-text"><input type="text" value="0" class="table-input"></td>
-						<td class="table-input-output-td number-text">0</td>
-					</tr>
-				</tbody>
-			</table>
-			<!-- 샘플 둥 -->
-			<div class="">
-				<button class="btn btn-danger btn-block" data-toggle="modal" data-target="#myModal">Save</button>
+						<tr>
+							<td>양파</td>
+							<td class="table-input-output-td number-text">20</td>
+							<td class="table-input-output-td number-text"><input type="text" value="0" class="table-input"></td>
+							<td class="table-input-output-td number-text"><input type="text" value="0" class="table-input"></td>
+							<td class="table-input-output-td number-text">0</td>
+						</tr>
+						<tr>
+							<td>토마토</td>
+							<td class="table-input-output-td number-text">15</td>
+							<td class="table-input-output-td number-text"><input type="text" value="0" class="table-input"></td>
+							<td class="table-input-output-td number-text"><input type="text" value="0" class="table-input"></td>
+							<td class="table-input-output-td number-text">0</td>
+						</tr>
+					</tbody>
+				</table>
+				<table class="table table-striped">
+					<tbody>
+						<thead class="table-header">
+							<tr>
+								<th colspan="5" class="table-category">주류</th>
+							</tr>
+						</thead>
+						<tr>
+							<th class="table-input-output-td">항목</th>
+							<th class="table-input-output-td number-text">재고</th>
+							<th class="table-input-output-td number-text">입고</th>
+							<th class="table-input-output-td number-text">단가</th>
+							<th class="table-input-output-td number-text">금액</th>
+						</tr>
+						<tr>
+							<td>처음처럼</td>
+							<td class="table-input-output-td number-text">10</td>
+							<td class="table-input-output-td number-text"><input type="text" value="0" class="table-input"></td>
+							<td class="table-input-output-td number-text"><input type="text" value="0" class="table-input"></td>
+							<td class="table-input-output-td number-text">0</td>
+						</tr>
+						<tr>
+							<td>참이슬</td>
+							<td class="table-input-output-td number-text">20</td>
+							<td class="table-input-output-td number-text"><input type="text" value="0" class="table-input"></td>
+							<td class="table-input-output-td number-text"><input type="text" value="0" class="table-input"></td>
+							<td class="table-input-output-td number-text">0</td>
+						</tr>
+						<tr>
+							<td>백세주</td>
+							<td class="table-input-output-td number-text">15</td>
+							<td class="table-input-output-td number-text"><input type="text" value="0" class="table-input"></td>
+							<td class="table-input-output-td number-text"><input type="text" value="0" class="table-input"></td>
+							<td class="table-input-output-td number-text">0</td>
+						</tr>
+					</tbody>
+				</table>			
+				<table class="table table-striped">
+					<tbody>
+						<thead class="table-header">
+							<tr>
+								<th colspan="5" class="table-category">주류</th>
+							</tr>
+						</thead>
+						<tr>
+							<th class="table-input-output-td">항목</th>
+							<th class="table-input-output-td number-text">재고</th>
+							<th class="table-input-output-td number-text">입고</th>
+							<th class="table-input-output-td number-text">단가</th>
+							<th class="table-input-output-td number-text">금액</th>
+						</tr>
+						<tr>
+							<td>처음처럼</td>
+							<td class="table-input-output-td number-text">10</td>
+							<td class="table-input-output-td number-text"><input type="text" value="0" class="table-input"></td>
+							<td class="table-input-output-td number-text"><input type="text" value="0" class="table-input"></td>
+							<td class="table-input-output-td number-text">0</td>
+						</tr>
+						<tr>
+							<td>참이슬</td>
+							<td class="table-input-output-td number-text">20</td>
+							<td class="table-input-output-td number-text"><input type="text" value="0" class="table-input"></td>
+							<td class="table-input-output-td number-text"><input type="text" value="0" class="table-input"></td>
+							<td class="table-input-output-td number-text">0</td>
+						</tr>
+						<tr>
+							<td>백세주</td>
+							<td class="table-input-output-td number-text">15</td>
+							<td class="table-input-output-td number-text"><input type="text" value="0" class="table-input"></td>
+							<td class="table-input-output-td number-text"><input type="text" value="0" class="table-input"></td>
+							<td class="table-input-output-td number-text">0</td>
+						</tr>
+					</tbody>
+				</table>
+				<!-- 샘플 둥 -->
+				<div class="">
+					<button class="btn btn-danger btn-block" data-toggle="modal" data-target="#myModal">Save</button>
+				</div>
 			</div>
 		</div>
-	</div>
-	
-	<hr>
-    <footer style="clear: both; margin-top: 5px;margin-bottom: 5px;">
-    	<div style="text-align: center;">Developer's satisfaction</div>
-    </footer>
-    
-	<!-- Modal -->
-	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h3 class="modal-title" id="myModalLabel"><span class="glyphicon glyphicon-log-out"> </span> 출고</h3>
-				</div>
-				<div class="modal-body">
-					입력한 내용을 등록해도 될까요?
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-					<button type="button" class="btn btn-danger">Save</button>
-				</div>
-			</div><!-- /.modal-content -->
-		</div><!-- /.modal-dialog -->
-	</div><!-- /.modal -->
-    
-    <script>
-    	$(document).ready( function(){
-	    	var today = today = getTodayYYYYMMDD();
-    	   	var targetDate = $.getUrlVar('date');
-    	   	if( targetDate ) {
-	    		//해당 날짜 세팅
-	    		today = targetDate;
-	    		
+		
+		<hr>
+			<footer style="clear: both; margin-top: 5px;margin-bottom: 5px;">
+				<div style="text-align: center;">Developer's satisfaction</div>
+			</footer>
+			
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h3 class="modal-title" id="myModalLabel"><span class="glyphicon glyphicon-log-out"> </span> 출고</h3>
+					</div>
+					<div class="modal-body">
+						입력한 내용을 등록해도 될까요?
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-danger">Save</button>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+			
+		<script>
+			$(document).ready( function(){
+				var today = today = getTodayYYYYMMDD();
+				 	var targetDate = $.getUrlVar('date');
+				 	if( targetDate ) {
+					//해당 날짜 세팅
+					today = targetDate;
+					
 				//해당 날짜의 데이터 검색해서 데이터 세팅
-	    		
-	    		
-	    		
-	    		
-    	   	}
-	    	$("#output_date").val( today );
-	    	
-	    	  		
-    	} );
-    </script>
-    
-  </body>
+					
+					
+					
+					
+				 	}
+				$("#output_date").val( today );
+				
+							
+			} );
+		</script>
+		
+	</body>
 </html>​

@@ -40,9 +40,6 @@ a {
 .panel-title {
 	font-weight: bold;
 }
-.btn {
-	margin-bottom: 2px;
-}
 .btn-link {
 	color: inherit;
 	padding: 0px 6px;
@@ -50,6 +47,17 @@ a {
 }
 .btn-link-first {
 	padding-left: 0px;
+}
+.alert {
+	margin-bottom: 2px;
+}
+.nav > li {
+	width: 12.5%;
+	text-align: center;
+}
+.nav > li > a {
+	padding: 10px;
+	
 }
 /********** header **********/
 .a-header {
@@ -99,4 +107,12 @@ a {
 }
 .right-padding-10 {
 	padding-right: 10px;
+}
+.p-2px {
+	margin: 0px;
+	height: 2px;
+}
+.p-4px {
+	margin: 0px;
+	height: 4px;
 }
