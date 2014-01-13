@@ -48,6 +48,9 @@ a {
 	padding: 0px 6px;
 	border: 0px;
 }
+.btn-link-first {
+	padding-left: 0px;
+}
 /********** header **********/
 .a-header {
 	padding-left: 6px;

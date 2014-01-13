@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+    <title>jgo</title>
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="js/jgo.js"></script>
+
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="css/jgo.css" rel="stylesheet">
+  </head>
+  <body>
+   	<p> </p>
+  	<header>
+	  	<div class="pull-left">imageimage</div>
+  		<div class="pull-right">
+  			<button onclick='location.href="index.html"' class="btn btn-link"><span class="glyphicon glyphicon-home"> </span></button>
+  			<button onclick='location.href="list.html"' class="btn btn-link"><span class="glyphicon glyphicon-list-alt"> </span></button>
+  			<button onclick='location.href="input.html"' class="btn btn-link"><span class="glyphicon glyphicon-log-in"> </span></button>
+  			<button onclick='location.href="output.html"' class="btn btn-link"><span class="glyphicon glyphicon-log-out"> </span></button>
+  			<button onclick='location.href="search.html"' class="btn btn-link"><span class="glyphicon glyphicon-search"> </span></button>
+  			<button onclick='location.href="date.html"' class="btn btn-link"><span class="glyphicon glyphicon-calendar"> </span></button>
+  			<button onclick='location.href="settings.html"' class="btn btn-link"><span class="glyphicon glyphicon-cog"> </span></button>
+  		</div>
+  	</header>
+	<p> </p>
+	<hr>
+
+	<div class="panel panel-info">
+		<div class="panel-heading row" style="line-height:23px;">
+			<div class="text-right"><h3 class="panel-title"><span class="glyphicon glyphicon-info-sign"> </span> App info</h3></div>			
+		</div>
+		<div class="panel-body">
+			<div class="row">
+				<div class="col-xs-4 text-bold">Name</div>
+				<div class="col-xs-8">JGO - For inventory control</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-4 col-sm-2 text-bold">Version</div>
+				<div class="col-xs-8">1.0.0</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-4 col-sm-2 text-bold">Last updated</div>
+				<div class="col-xs-8">2014-01</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="panel panel-info">
+		<div class="panel-heading row" style="line-height:23px;">
+			<div class="text-right"><h3 class="panel-title"><span class="glyphicon glyphicon-info-sign"> </span> Developer's info</h3></div>			
+		</div>
+		<div class="panel-body">
+			<div class="row">
+				<div class="col-xs-4 text-bold">Team name</div>
+				<div class="col-xs-8">Developer's satisfaction</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-4 col-sm-2 text-bold">Members</div>
+				<div class="col-xs-8">
+					Peter Lee<br>
+					Anderson Seo
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-4 col-sm-2 text-bold">Contact</div>
+				<div class="col-xs-8">
+					<button onclick='location.href="mailto:0175854365@naver.com"' data-rel="external" class="btn btn-link btn-link-first"><span class="glyphicon glyphicon-send"> </span></button>
+					<button onclick='location.href="tel:01094459763"'  data-rel="external" class="btn btn-link"><span class="glyphicon glyphicon-phone"> </span></button>
+				</div>
+			</div>
+		</div>
+	</div>
+  
+      
+	<hr>
+    <footer style="clear: both; margin-top: 5px;margin-bottom: 5px;">
+    	<div style="text-align: center;">Developer's satisfaction</div>
+    </footer>
+    
+    <script>
+    	$(document).ready( function(){
+	    	var today = getTodayYYYYMMDD();
+	    	$("#input_date").text( today );    		
+    	} );
+    </script>
+  </body>
+</html>​
